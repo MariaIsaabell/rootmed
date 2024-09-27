@@ -23,7 +23,7 @@ a {
     transition: 0.3s;
 }
 
-/* HEADER */
+  /* --- HEADER --- */
 
 .header {
     color: var(--texto-default);
@@ -52,8 +52,7 @@ a {
     margin-right: 8px;
 }
 
-
-/* Nav menu Desktop = Responsivo */
+  /* --- Nav menu Desktop = Responsivo --- */
 @media (min-width:1200px) {
     .navmenu {
         padding: 0;
@@ -137,7 +136,7 @@ a {
     }
 }
 
-/* Navmenu - Mobile */
+  /* --- Navmenu - Mobile --- */
 @media (max-width: 1199px) {
     .mobile-nav-toggle {
       color: var(--nav-color);
@@ -263,9 +262,9 @@ a {
       display: block;
     }
 }
-/* FIM Menu Mobile - MEDIA 1199px  */
+  /* FIM Menu Mobile - MEDIA 1199px  */
 
-/* ------ HERO  --------- */
+  /* --- HERO  --- */
 .hero {
     padding: 0;
 }
@@ -288,9 +287,21 @@ a {
     object-fit: cover;
 }
 
+.hero .carousel-item{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-height:500px), 
 (max-width:500px)  {
     .hero .carousel {
         min-height: 100vh;
     }
 }
+
