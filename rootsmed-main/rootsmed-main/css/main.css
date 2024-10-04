@@ -374,6 +374,13 @@ font-weight: 700;
   background: red;
 }
 
+@media (max-height:500px), 
+(max-width:500px)  {
+  .hero .carousel {
+      min-height: 100vh;
+  }
+}
+
   /* --- # Featured Services Section ---  */
 
 .featured-services .service-item {
@@ -412,15 +419,91 @@ font-weight: 700;
   margin-bottom: 0;
 }
 
+
 .featured-services .service-item:hover h4 a, 
 .featured-services .service-item:hover .icon i,
 .featured-services .service-item:hover p {
   color: whitesmoke;
 }
 
-@media (max-height:500px), 
-(max-width:500px)  {
-  .hero .carousel {
-      min-height: 100vh;
+.featured-services .service-item:hover:before {
+  background:#3fbbc0 ;
+  inset: 0;
+  border-radius: 0px;
+}
+
+
+.featured-services .service-item:before {
+  content: "";
+  position: absolute;
+  background: white;
+  inset: 100% 0 0 0 ;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+
+/* --- # Global Section --- */
+
+section, .section {
+/* color:  ; */
+background: #e0e0e0;
+padding: 60px 0;
+
+}
+
+@media (max-widht: 1199px) {
+  section,
+  .section {
+    scroll-margin-top: 100px;
   }
+}
+
+.accent-background {
+  background: #3fbbc0;
+  color: #e0e0e0;
+}
+
+
+
+/* --- # Global Section Titles - Títulos --- */
+
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: black;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+/* --- Sobre --- */
+
+.sobre .content h3 {
+ font-size: 1.75rem;
+ font-weight: 700;
 }
