@@ -369,7 +369,7 @@ font-weight: 700;
   justify-content: center;
 } 
 
-.hero .carousel-indicators {
+.hero .carousel-indicators li {
   cursor: pointer;
   background: #444;
   width: 12px;
@@ -381,7 +381,7 @@ font-weight: 700;
   transition: 0.3s;
 }
 
-.hero .carousel-indicators.active  {
+.hero .carousel-indicators li.active  {
   opacity: 1;
   background: red;
 }
@@ -959,4 +959,31 @@ section,
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: #01d2e9;
+}
+
+/* Resposivos  */
+
+@media (max-height: 500px), 
+(max-width: 580px) {
+  .hero .carousel {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero .carousel-control-next {
+    padding-left: 15px;
+  }
 }
